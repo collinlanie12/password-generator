@@ -1,8 +1,8 @@
 # password-generator
 
-This project will be focused on creating an application that generates a random password based on user-selected criteria.\
-The application willl run in the browser and feature dynamically updated HTML and CSS powered by the JavaScript code.\
-It also features a clean and polished user interface and can be responsive, ensuring that it adapts to multiple screen sizes.
+* This project will be focused on creating an application that generates a random password based on user-selected criteria.
+* The application willl run in the browser and feature dynamically updated HTML and CSS powered by the JavaScript code.
+* It also features a clean and polished user interface and can be responsive, ensuring that it adapts to multiple screen sizes.
 
 ## The User Story:
 > <ins>AS A</ins> employee with access to sensitive data\
