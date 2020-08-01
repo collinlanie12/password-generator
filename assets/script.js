@@ -38,6 +38,23 @@ function generatePassword() {
   }
   // Test Case 2: For password character length
   // console.log(numberOfCharacters);
+
+  var pickedCharacters = [];
+  if (confirm("Would you like to include numbers in your password?")) {
+    pickedCharacters.push(nums);
+  }
+  if (confirm("Would you like to include lowecase letters in your password?")) {
+    pickedCharacters.push(lowerCase);
+  }
+  if (confirm("Would you like to include uppercase letters in your password?")) {
+    pickedCharacters.push(upperCase);
+  }
+  if (confirm("Would you like to include special characters in your password?")) {
+    pickedCharacters.push(specialCharacters);
+  }
+  // Test Case 3: Adding prompted choices of characters to empty array
+  // console.log(pickedCharacters);
+
 }
 
 // Add event listener to generate button

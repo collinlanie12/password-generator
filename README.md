@@ -12,10 +12,10 @@
 ## Task To Be Completed:
 - [x] Create arrays to hold characters to be used in password creation.
 - [ ] Complete action of button being pressed and password being generated.
-- [ ] Create series of prompts for a password criteria for user to choose.
+- [x] Create series of prompts for a password criteria for user to choose.
 - [ ] Create user accessibility to choose which criteria to include in their password.
 - [x] User is able to choose the legnth of their password (from 8 min - 128 max characters).
-- [ ] User is able to choose lowercase, uppercase, numeric, and/or special characters for password.
+- [x] User is able to choose lowercase, uppercase, numeric, and/or special characters for password.
 - [ ] Validation check that at least one character type is selected.
 - [ ] Password creation once all prompts are answered, with user selected criteria.
 - [ ] Password is displayed in on webpage.
