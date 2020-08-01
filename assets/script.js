@@ -39,7 +39,6 @@ function generatePassword() {
   // Test Case 2: For password character length
   // console.log(numberOfCharacters);
 
-  // Validation check to make sure user chooses at least one of the criteria 
   while (true) {
     var numCheck = confirm("Would you like to include numbers in your password?");
     var lowerCheck = confirm("Would you like to include lowecase letters in your password?");
@@ -50,23 +49,35 @@ function generatePassword() {
     }
     alert("You have to choose one of the criteria to include in your password!");
   }
+  // Validation check to make sure user chooses at least one of the criteria 
 
-  var pickedCharacters = [];
+  var pickedCharactersArr = [];
   if (numCheck === true) {
-    pickedCharacters.push(nums);
+    pickedCharactersArr.push(nums);
   }
   if (lowerCheck === true) {
-    pickedCharacters.push(lowerCase);
+    pickedCharactersArr.push(lowerCase);
   }
   if (upperCheck === true) {
-    pickedCharacters.push(upperCase);
+    pickedCharactersArr.push(upperCase);
   }
   if (specialCheck === true) {
-    pickedCharacters.push(specialCharacters);
+    pickedCharactersArr.push(specialCharacters);
   }
   // Test Case 3: Adding prompted choices of characters to empty array
-  console.log(pickedCharacters);
+  // console.log(pickedCharactersArr);
 
+  var passwordString = " ";
+  for (var i = 0; i < numberOfCharacters; i++) {
+    var randomPassword = Math.floor(Math.random() * pickedCharactersArr.length);
+    var randomCriteria = Math.floor(Math.random() * pickedCharactersArr[randomPassword].length);
+    var passwordCreation = pickedCharactersArr[randomPassword][randomCriteria];
+    passwordString += passwordCreation;
+  }
+  // Test Case 4: Check to see if random password is created
+  // console.log(passwordString);
+
+  return passwordString;
 }
 
 // Add event listener to generate button
